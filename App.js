@@ -1,17 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import TabNavigation from './src/navigation/TabNavigation';
+import Navigation from './src/navigation/Navigation';
 
-const App = () => {
+
+
+export default function App() {
   return (
     <NavigationContainer>
-      <SafeAreaView>
-        <Text>Hello World</Text>
-      </SafeAreaView>
-    </NavigationContainer>
+      <Navigation/>
+    </NavigationContainer>  
   )
 }
 
-export default App
-
 const styles = StyleSheet.create({})
+
+
+
+
+
